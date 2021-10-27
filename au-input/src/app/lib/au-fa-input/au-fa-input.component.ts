@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ContentChild, HostBinding, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, ContentChild, HostBinding, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { InputRefDirective } from '../common/input-ref.directive';
 
 @Component({
@@ -19,14 +19,14 @@ export class AuFaInputComponent implements OnInit, AfterContentInit {
   }
 
   @HostBinding('class.input-focus')
-  get isInputFocus() {
+  getIsInputFocus() {
     return this.input ? this.input.focus : false;
   }
 
   ngOnInit() {
   }
 
-  get classes() {
+  getClasses() {
     const cssClasses = {
     }
 

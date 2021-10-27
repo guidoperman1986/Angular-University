@@ -1,0 +1,12 @@
+/* $border-color: red;
+
+:host-context(.au-fa-input-red-theme) {
+    border-color: $border-color;
+
+    &.info-focus{
+        -webkit-box-shadow: 0 0 5px $border-color;
+        box-shadow: 0 0 5px $border-color;
+    }
+}
+
+ */
